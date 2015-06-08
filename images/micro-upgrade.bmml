@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="668" measuredH="397" mockupW="508" mockupH="312">
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="668" measuredH="369" mockupW="508" mockupH="284">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="177" y="85" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -13,7 +13,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="489" y="270" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="489" y="242" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <color>16776960</color>
         <shape>roundRect</shape>
@@ -41,17 +41,17 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="28" controlTypeID="com.balsamiq.mockups::HCurly" x="468" y="317" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::HCurly" x="468" y="289" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Upgrade%20only%20needs%20to%20change%20what%20changes</text>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="521" y="141" w="31" h="35" measuredW="224" measuredH="225" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="529" y="157" w="31" h="35" measuredW="224" measuredH="225" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <src>./ruby.jpeg</src>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="525" y="247" w="86" h="34" measuredW="306" measuredH="164" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="529" y="241" w="86" h="34" measuredW="306" measuredH="164" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <src>./node.png</src>
       </controlProperties>
