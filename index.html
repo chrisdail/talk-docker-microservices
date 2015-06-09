@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+        <link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
         <!-- Code syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,23 +42,24 @@
             <div class="slides">
                 <section>
                     <h2>Docker and Microservices</h2>
-                    <p>Chris Dail - <a href="http://twitter.com/chrisdail">@chrisdail</a></p>
-                    <p>Director, Software Engineering at <a href="http://www.emc.com/">EMC</a></p>
+                    <h4>Maritime Devcon 2015</h4>
                     <p>
-                        <small><a href="http://chrisdail.github.io/talk-docker-microservices/">http://chrisdail.github.io/talk-docker-microservices/</a></small>
+                        Chris Dail <a href="http://twitter.com/chrisdail">@chrisdail</a><br />
+                        <small>Director, Software Engineering at <a href="http://www.emc.com/">EMC</a><br />
+                        <a href="http://chrisdail.github.io/talk-docker-microservices/">http://chrisdail.github.io/talk-docker-microservices/</a></small>
                     </p>
                 </section>
 
-                <!--
                 <section>
                     <p>Gartner, Inc. forecasts 4.9 billion connected devices in 2015</p>
-                    <p class="fragment"><small>30% over 2014</small></p>
+                    <p class="fragment">30% over 2014</p>
                 </section>
 
                 <section>
                     <p>... Predicts 25 billion by 2020</p>
                 </section>
 
+                <!--
                 <section data-background="images/thirdplatform.png" data-background-size="80%">
                 </section>
                 -->
@@ -106,7 +107,7 @@
                 <section>
                     <h2>What are Microservices?</h2>
                     <blockquote>
-                        &ldquo;In computing, microservices is a software architecture style, in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small, highly decoupled and focus on doing a small task.&rdquo; - Wikipedia
+                        &ldquo;In computing, microservices is a software <strong>architecture style</strong>, in which complex applications are composed of <strong>small, independent processes</strong> communicating with each other using <strong>language-agnostic APIs</strong>. These services are <strong>small, highly decoupled and focus on doing a small task</strong>.&rdquo; - Wikipedia
                     </blockquote>
                 </section>
 
@@ -123,6 +124,11 @@
                 <section>
                     <img src="images/micro-upgrade.png">
                     <h3>Microservices Upgrade</h3>
+                </section>
+
+                <section>
+                    <h3>Change in process</h3>
+                    <p>Change in team organization</p>
                 </section>
 
                 <section>
@@ -146,8 +152,13 @@
                     </ul>
                 </section>
 
+                <section>
+                    <h3>Downside</h3>
+                    <p>Can create messy deployment</p>
+                </section>
+
                 <section data-background="images/docker.png" data-background-size="80%" data-background-transition="zoom">
-                    <h2>What is Docker?</h2>
+                    <h2>Enter Docker</h2>
                 </section>
 
                 <section>
@@ -192,6 +203,7 @@
                 <section>
                     <h3>Docker Registry</h3>
                     <ul>
+                        <li>Central repository for exchanging images</li>
                         <li>Docker can push and pull from a registry</li>
                         <li>Public Images on <a href="https://registry.hub.docker.com/">Docker Hub Registry</a></li>
                         <li>Private Registry</li>
@@ -201,10 +213,9 @@
                 <section>
                     <h3>The Good</h3>
                     <ul>
-                        <li>Much more lightweight than VMs</li>
-                        <li>Containers are processes and start in milliseconds</li>
-                        <li>Near bare-metal performance</li>
-                        <li>Simple deployment</li>
+                        <li>Isolation of services, but more lightweight than VMs</li>
+                        <li>Near bare-metal performance, start as fast as processes</li>
+                        <li>Simple deployment, upgrade</li>
                         <li>No library compatibility problems</li>
                         <li>Aligns nicely with Microservices</li>
                     </ul>
@@ -225,7 +236,7 @@
                 </section>
 
                 <section>
-                    <h3>Afterthoughts</h3>
+                    <h3>Final Thoughts</h3>
                     <ul>
                         <li>Microservices:
                             <ul>
