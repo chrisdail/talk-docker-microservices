@@ -201,6 +201,29 @@
                 </section>
 
                 <section>
+                    <h3>Dockerfile</h3>
+                    <ul>
+                        <li>Instructions file to <i>docker build</i></li>
+                        <li>Creates an image based on another image</li>
+                    </ul>
+<pre><code># Firefox over VNC
+FROM ubuntu
+
+# Install vnc, xvfb in order to create a 'fake' display and firefox
+RUN apt-get update &amp;&amp; apt-get install -y x11vnc xvfb firefox
+RUN mkdir ~/.vnc
+
+# Setup a password
+RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
+
+# Autostart firefox (might not be the best way, but it does the trick)
+RUN bash -c 'echo "firefox" >> /.bashrc'
+
+EXPOSE 5900
+CMD    ["x11vnc", "-forever", "-usepw", "-create"]</code></pre>
+                </section>
+
+                <section>
                     <h3>Docker Registry</h3>
                     <ul>
                         <li>Central repository for exchanging images</li>
@@ -250,6 +273,7 @@
                                 <li>Not just for production, build environments too</li>
                                 <li><a href="http://boot2docker.io/">boot2docker.io</a></li>
                                 <li>Not just docker. <a href="https://linuxcontainers.org/lxc/introduction/">LXC</a>, <a href="https://linuxcontainers.org/lxd/introduction/">LXD</a>, <a href="https://github.com/coreos/rkt">Rkt</a></li>
+                                <li>Managing Complexity: <a href="https://docs.docker.com/compose/">Docker Compose</a>, <a href="http://www.ansible.com/home">Ansible</a></li>
                                 <li>Platforms: <a href="http://kubernetes.io/">Kubernetes</a>, <a href="https://coreos.com/">CoreOS</a>, <a href="http://mesos.apache.org/">Mesos</a></li>
                             </ul>
                         </li>
